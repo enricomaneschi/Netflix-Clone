@@ -1,0 +1,71 @@
+:root {
+    --black-background: #141414
+}
+
+body {
+    background-color: var(--black-background);
+    overflow-x: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+
+}
+
+#nav-search input {
+    display: none;
+    width: 0%;
+}
+
+#nav-search:hover input,
+#nav-search input:focus-within {
+    display: block;
+    animation-name: slide-open;
+    animation-duration: 1.3s;
+}
+
+@keyframes slide-open {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#navbarSupportedContent {
+    gap: 0.3rem;
+}
+
+h2 {
+    margin-left: 15px;
+}
+
+.footer-container {
+    margin-top: 100px;
+
+}
+
+.social-icon {
+    width: 35px;
+}
+
+.movie-card {
+    transition: 0.4s;
+}
+
+.movie-card:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.col-2 {
+    position: relative;
+}
+
+.movie-shadow {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.516);
+    position: absolute;
+    top: 0;
+}
